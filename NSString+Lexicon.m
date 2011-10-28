@@ -92,4 +92,20 @@
     return nil;
 }
 
+- (NSUInteger) numberOfNounsInString {
+    return [[[self stringLexicon] objectForKey:@"nouns"] count];    
+}
+
+- (NSUInteger) numberOfVerbsInString {
+    return [[[self stringLexicon] objectForKey:@"verbs"] count];
+}
+
+- (NSUInteger) numberOfAdjectivesInString {
+    return [[[self stringLexicon] objectForKey:@"adjectives"] count];
+}
+
+- (NSUInteger) numberOfPronounsInString {
+    return [[[self stringLexicon] objectForKey:@"pronouns"] count];
+}
+
 @end
